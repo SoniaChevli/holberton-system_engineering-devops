@@ -1,0 +1,12 @@
+ls -la
+
+total 40
+drwxr-xr-x   9 sonia  staff  288 Jan  9 11:18 .
+lrwxr-xr-x   1 sonia  staff   36 Jan  9 11:18 .#0-current_working_directory -> sonia@Sonias-MacBook-Pro.local.12194
+drwxr-xr-x   4 sonia  staff  128 Jan  9 10:51 ..
+drwxr-xr-x  13 sonia  staff  416 Jan  9 11:19 .git
+-rw-r--r--   1 sonia  staff   58 Jan  9 10:55 0-current_working_directory
+-rw-r--r--   1 sonia  staff   37 Jan  9 11:00 1-listit
+-rw-r--r--   1 sonia  staff    8 Jan  9 11:15 2-bring_me_home
+-rw-r--r--   1 sonia  staff  246 Jan  9 11:18 3-listfiles
+-rw-r--r--   1 sonia  staff   38 Jan  9 10:51 README.md
