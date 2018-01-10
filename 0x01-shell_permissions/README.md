@@ -1,15 +1,15 @@
 0x01. Shell, permissions
 
-0. My name is Betty
+0-iam_betty
  changes user ID to betty
 
-1. Who am I
+1-who_am_i
  prints current userid
 
-2. Empty!
+4-empty
   creates an empty file
 
-3. Groups 
+2-groups
   prints all groups of current user
 
 3-new_owner
