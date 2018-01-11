@@ -1,2 +1,0 @@
-qZ#!/bin/bash
-find -type d | xargs chmod 711
