@@ -1,1 +1,3 @@
-rm -r holberton 
+#!/bin/bash
+rm -r holberton
+ 

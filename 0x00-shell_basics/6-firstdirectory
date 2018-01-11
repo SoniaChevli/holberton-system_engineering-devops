@@ -1,2 +1,2 @@
-cd /tmp
-mkdir holberton
+#!/bin/bash
+mkdir holberton /tmp

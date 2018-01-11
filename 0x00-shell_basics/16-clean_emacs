@@ -1,1 +1,3 @@
-Sonias-MacBook-Pro:holberton-system_engineering-devops sonia$ rm ~*
+#!/bin/bash
+rm ~*
+
