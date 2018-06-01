@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+LIST="$(find . -type f -not -path '*/\.*' | cut -d '-' -f 2 | tr ' ' '\n')"
+
+for i in "${LIST[@]}"; do
+    echo "$i"
+done
