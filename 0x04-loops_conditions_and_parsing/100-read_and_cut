@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+file="/etc/passwd"
+while read
+do
+	line | cut -d: -f-1,3-3,6- | rev | cut -d: -f2- | rev
+
+done < "$file"
