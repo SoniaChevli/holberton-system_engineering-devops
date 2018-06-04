@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# displays the time
 i=0
 j=1
 while [ $i -le 12 ]

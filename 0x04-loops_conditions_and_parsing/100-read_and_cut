@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# displys content of /et/cpasswd
 
 file="/etc/passwd"
 while read

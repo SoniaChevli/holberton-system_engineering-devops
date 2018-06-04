@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# gives informattion on holbertonschool file
 
 if [ -e holbertonschool ]
 then

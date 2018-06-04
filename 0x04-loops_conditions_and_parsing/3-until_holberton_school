@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# displays holberton school 10 times
 
 i=1
 until [ $i -gt 10 ]

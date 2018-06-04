@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# displays content of current directory
 LIST="$(find . -type f -not -path '*/\.*' | cut -d '-' -f 2 | tr ' ' '\n')"
 
 for i in "${LIST[@]}"; do
