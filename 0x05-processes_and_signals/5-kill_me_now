@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # kill infinity and beyond
-pgrep -f ./4-to_infinity | cut -d' ' -f3 | xargs kill -9
+pgrep -f 4-to_infinity_and_beyond | xargs kill -9
