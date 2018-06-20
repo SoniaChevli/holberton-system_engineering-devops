@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 # pings an IP address thats passed as an argument
-ping "$1" -c 5
+if [ "$1" ]
+then
+    ping "$1" -c 5
+else
+    echo "5-is_the_host_on_the_network {IP_ADDRESS}"
+fi
