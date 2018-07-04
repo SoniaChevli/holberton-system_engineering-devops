@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # configures nginx
-echo "Holberton School" > usr/share/nginx/html/index.html
+sudo /etc/init.d/nginx start
+echo "Holberton School" > sudo /usr/share/nginx/html/index.html
