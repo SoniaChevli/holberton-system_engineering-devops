@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # configures nginx
-echo "Holberton School" > /usr/share/nginx/html/index.html
+echo "Holberton School" | /usr/share/nginx/html/index.html
