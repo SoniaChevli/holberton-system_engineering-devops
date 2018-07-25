@@ -6,6 +6,6 @@
 * Ubuntu 14.04
 
 ## Tasks:
-* 0-nginx_likes_port_80\n
+* 0-nginx_likes_port_80
 
 Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80
