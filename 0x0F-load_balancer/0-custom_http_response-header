@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # configures Nginx so HTTP response contains a custom header
-new_string="add_header X-Served-By: 03-web-01;"
-sudo sed -i "23i $new_string" /etc/nginx/sites-available/default
+new_string="add_header X-Served-By: "
+sudo sed -i "23i $new_string + $host" /etc/nginx/sites-available/default
 sudo servce nginx reload
