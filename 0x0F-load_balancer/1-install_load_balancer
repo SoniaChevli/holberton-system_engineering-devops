@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# configures load balancer for web1 web2 - round robbin
+sudo apt-get update
+sudo apt-get install haproxy
+new_string="backend backendnodes\n\tbalance roundrobin\n
+\tserver 347-web-01 104.196.182.229:80\n
+\tserver 347-web-02 35.196.48.12:80"
+sudo sed -i "0i $new_string;" /etc/haproxy/haproxy.cfg
+second_string="ENABLED=1"
+sudo sed -i "0i $second_string;" /etc/default/haproxy
+sudo service nginx restart
