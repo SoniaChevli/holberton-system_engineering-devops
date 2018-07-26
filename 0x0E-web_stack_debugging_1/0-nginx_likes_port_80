@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # web debugging to make Nginx listen on port 80
-new_string="listen 80 default_server;\n"
+#new_string="listen 80 default_server;\n"
 #second_string="listen [::]:80 default_server ipv6only=on;\n"
-sudo sed -i "21i $new_string" ~/../etc/nginx/sites-enabled/default
+sudo sed -i "s/8080/80/g" ~/../etc/nginx/sites-enabled/default
 #sudo sed -i "22i $second_string" ~/../etc/nginx/sites-enabled/default
-
-sudo service nginx start
+sudo service nginx restart
