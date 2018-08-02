@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # change user to nginx, have it listen on all active IPs
-sudo su - nginx sudo sed -i "s/80/8080/g" ~/../etc/nginx/sites-enabled/default
+NEW_STRING="user  nginx;"
+sudo sed -i "1i $NEW_STRING" /etc/nginx/nginx.conf
+sudo sed -i "s/80/8080/g" /etc/nginx/sites-enabled/default
 sudo service nginx restart
