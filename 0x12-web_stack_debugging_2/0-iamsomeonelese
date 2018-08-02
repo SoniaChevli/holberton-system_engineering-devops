@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# run the whoami command under the user passed as an argument
+whoami=$1
+echo $whoami
