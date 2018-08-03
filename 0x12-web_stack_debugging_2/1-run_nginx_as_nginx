@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # change user to nginx, have it listen on all active IPs
+sudo pkill -f apache2
 sudo chmod 644 /etc/nginx/nginx.conf
 sudo chown nginx:nginx /etc/nginx/nginx.conf
-sudo sed -i "s/80 default_server/8080 default_server/g" /etc/nginx/sites-enabled/default
+sudo sed -i "s/80 default_server/8080 default_server/g" \
+    /etc/nginx/sites-available/default
 sudo service nginx restart
