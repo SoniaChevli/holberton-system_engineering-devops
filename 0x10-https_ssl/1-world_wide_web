@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# outputs the subdomain, record type, and destination
+# $1: subdomain
+# $2: domain
+function_record ()
+{
+    DESTINATION=$(dig "$2" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
+    echo "The subdomain $1 is a A record and points to $DESTINATION"
+}
+
+if [ $# -eq 1 ]
+then
+    function_record www www.$1
+    function_record lb-01 lb-01.$1
+    function_record web-01 web-01.$1
+    function_record web-02 web-02.$1
+else
+    function_record $2 $2.$1
+fi
