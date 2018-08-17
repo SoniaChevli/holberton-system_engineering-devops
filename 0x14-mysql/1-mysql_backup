@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# create a backup of all the servers data
+# $1: password
+sudo mysqldump -u root -p "$1" --all-databases > backup.sql
+tar -czvf "$(date +%d-%m-%Y).tar.gz" backup.sql
