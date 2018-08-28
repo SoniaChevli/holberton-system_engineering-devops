@@ -4,8 +4,8 @@ given REST API for all employees
 returns information about TODO list progress
 '''
 if __name__ == '__main__':
-    import requests
     import json
+    import requests
 
     all_todos = requests.get(
         "https://jsonplaceholder.typicode.com/todos")

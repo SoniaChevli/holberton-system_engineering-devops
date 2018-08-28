@@ -4,8 +4,9 @@ given REST API for given employee ID
 returns information about TODO list progress
 '''
 if __name__ == '__main__':
-    import sys
     import requests
+    import sys
+
     employee_id = sys.argv[1]
     user_data = requests.get(
         "https://jsonplaceholder.typicode.com/todos?userId={}"
