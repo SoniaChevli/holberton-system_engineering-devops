@@ -18,6 +18,6 @@ def number_of_subscribers(subreddit):
                                  get('children')[0].\
                                  get('data').\
                                  get('subreddit_subscribers')
-        return subscribers
+        return int(subscribers)
     except:
         return 0
