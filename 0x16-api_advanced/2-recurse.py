@@ -19,4 +19,6 @@ def recurse(subreddit, hot_list=[], index=0):
             hot_list.append(all_data[index].get('data').get('title'))
             return(recurse(subreddit, hot_list, index + 1))
     except:
+        if len(hot_list) == 0:
+            return None
         return hot_list
