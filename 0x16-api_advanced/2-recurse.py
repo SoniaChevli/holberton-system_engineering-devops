@@ -12,7 +12,6 @@ def recurse(subreddit, hot_list=[], index=0):
     }
     URL = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     try:
-        print('a')
         reddit_data = requests.get(url=URL, headers=headers)
         all_data = reddit_data.json().get('data').get('children')
 
